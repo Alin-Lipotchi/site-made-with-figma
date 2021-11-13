@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Typography */
+
+h1 {
+    font-weight: 600;
+    line-height: 4.31;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 3.37;
+}
+
+h3 {
+    font-weight: 600;
+    line-height: 2.75;
+}
+
+h4 {
+    font-weight: 600;
+    line-height: 2;
+}
+
+.body-1 {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.body-2 {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.btn-t-big {
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.btn-t-small {
+    font-weight: 700;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.caption {
+    font-weight: 400;
+    line-height: 1;
+    font-size: 12px;
+}
+
+/* Color */
+/* Variables */
+:root {
+    --primary-color: #353A8D;
+    --accent-color: #40DD9C;
+    --neutral-color: #36385A;
+    --secondary-accent: #53E0A6;
+    --secondary-color_1: #10246A;
+    --secondary-color_2: #4C53B1;
+    --secondary-color_3: #60627D;
+    --disabled-color: #E2E3E9;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+.text-dark {
+    color: var(--secondary-color_3);
+}
+
+/* Buttons */
+/* Size */
+.btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-large {
+    padding: 16px 24px;
+}
+
+.btn-small {
+    padding: 8px 24px;
+}
+
+/* Emphasis */
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--secondary-color_1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color_1);
+}
+
+.btn-tertiary {
+    background-color: #fff;
+    color: var(--secondary-color_1);
+}
+
+/* Button States */
+/* Accent Buttons */
+.btn-accent:hover {
+    background-color: var(--secondary-accent);
+    color: var(--primary-color);
+}
+
+.btn-accent:focus {
+    background-color: var(--secondary-accent);
+    color: var(--primary-color);
+    border: 3px solid #70A6F7;
+}
+
+.brn-accent:active {
+    background-color: #23C78B;
+    color: var(--secondary-color_1);
+}
+
+/* Primary Buttons */
+.btn-primary:hover {
+    background-color: var(--secondary-color_2);
+    color: #fff;
+}
+
+.btn-primary:focus {
+    background-color: var(--secondary-color_2);
+    color: #fff;
+    border: 3px solid #70A6F7;
+}
+
+.brn-primary:active {
+    background-color: var(--secondary-color_1);
+    color: #fff;
+}
+
+/* Tertiary Buttons */
+
+/* Disabled button */
+.btn-disabled {
+    background-color: var(--disabled-color);
+    cursor: default;
+}
+
+
+
+
+
+/* Layout */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.hamburger {
+    color: var(--primary-color);
+}
+
+.cart {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 12px;
+    color: #fff;
+    border-radius: 51px;
+    margin-right: 1rem;
+}
+
+.cart i {
+    margin-left: 0.5rem;
+}
+
+/* Page-Menu */
+
+.page-menu {
+    padding: 1rem;
+}
+
+.page-menu a {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+/* Products */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-link {
+    margin: 1rem;
+}
+
+.product-card {
+    border: 1px solid #E1E1EA;
+    border-radius: 8px;
+}
+
+.product-card-text {
+    padding: 0.5rem 0;
+}
+
+.product-card-text p {
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.product-card-title {
+    font-weight: 600;
+}
+
+.product-image_1 {
+    background: url(./img/product_1.png) no-repeat center center/cover;
+    height: 200px;
+    width: 100%;
+}
+
+.product-image_2 {
+    background: url(./img/product_2.png) no-repeat center center/cover;
+    height: 200px;
+    width: 100%;
+}
+
+.product-image_3 {
+    background: url(./img/product_3.png) no-repeat center center/cover;
+    height: 200px;
+    width: 100%;
+}
+
