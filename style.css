@@ -199,6 +199,11 @@ h4 {
 
 
 /* Layout */
+
+.container {
+    max-width: 1400px;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -365,4 +370,20 @@ h4 {
     margin-top: 3rem;
     padding: 0.5rem;
     text-align: center;
+}
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 767px) {
+
+    
+
+    /* Products */
+    .products {
+        flex-direction: row;
+        max-width: 1400px;
+    }
 }
