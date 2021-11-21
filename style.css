@@ -330,18 +330,21 @@ h4 {
     background: url(./img/product_1.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-type-image_2 {
     background: url(./img/product_2.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-type-image_3 {
     background: url(./img/product_3.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 /* Products/second page */
@@ -350,67 +353,79 @@ h4 {
     background: url(./img/Product_card/Rectangle1.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-image_2 {
     background: url(./img/Product_card/Rectangle2.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 .product-image_3 {
     background: url(./img/Product_card/Rectangle3.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-image_4 {
     background: url(./img/Product_card/Rectangle4.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 .product-image_5 {
     background: url(./img/Product_card/Rectangle5.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-image_6 {
     background: url(./img/Product_card/Rectangle6.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 .product-image_7 {
     background: url(./img/Product_card/Rectangle7.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-image_8 {
     background: url(./img/Product_card/Rectangle8.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 .product-image_9 {
     background: url(./img/Product_card/Rectangle9.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-image_10 {
     background: url(./img/Product_card/Rectangle10.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 .product-image_11 {
     background: url(./img/Product_card/Rectangle11.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .product-image_12 {
     background: url(./img/Product_card/Rectangle12.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 /* Description */
@@ -488,16 +503,26 @@ h4 {
 
 .main-product {
     height: 100%;
-    max-width: 340px;
+    max-width: 356px;
     margin: 0 auto;
     margin-top: 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
 }
 
-.main-product-image {
-    width: 100%;
+.main-product-big-image {
+    width: 340px;
+}
+
+.main-product .main-product-small-image {
+    display: none;
+}
+
+.main-product .main-product-details {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-product .image-no {
@@ -557,8 +582,9 @@ h4 {
 
 /* FAQ */
 .faq {
-    max-width: 340px;
+    max-width: 356px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .faq h4 {
@@ -587,7 +613,7 @@ h4 {
 .similar-products h3 {
     font-size: 28px;
     color: #FFFDF7;
-    margin: 0 1rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .similar-products .sm-products {
@@ -595,7 +621,6 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     gap: 1.5rem;
-    /* width: 100%; */
     padding: 0 1rem;
     overflow-x: scroll;
 }
@@ -621,6 +646,7 @@ h4 {
     background: url(./img/doggo.png) no-repeat center center/cover;
     height: 200px;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 
@@ -713,6 +739,70 @@ h4 {
     .footer-icons:last-child .social-img {
         margin-right: 3.5rem;
     }
+
+    /* Pagina 3/produs */
+
+    .main-product {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1040px;
+    }
+
+    .main-product .image-no {
+        display: none;
+    }
+
+    .main-product .dots {
+        display: none;
+    }
+
+    .main-product .main-product-images {
+        max-width: 500px;
+        flex-shrink: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 1rem;
+        gap: 1rem;
+    }
+
+    .main-product .main-product-big-image {
+        flex-basis: 100%;
+    }
+
+    .main-product .main-product-small-image {
+        width: 100%;
+        display: block;
+        flex-basis: calc(100% / 3 - 1rem);
+        /* flex-grow: 1;
+        flex-shrink: 0; */
+    }
+
+    /* FAQ */
+
+    .faq {
+        max-width: 500px;
+        margin: 0;
+    }
 }
 
-/* fa state-ul de hover la butoane be */
+
+@media (min-width: 1048px) {
+
+    .similar-products .sm-products {
+        justify-content: center;
+        overflow-x: auto;
+        max-width: 1040px;
+        margin: 0 auto;
+        gap: 2.5rem;
+    }
+
+    .similar-products h3 {
+        position: relative;
+        text-align: center;
+        right: 380px;
+    }
+}
+
+/* fa state-ul de  hover la butoane be */
+/* pune pretu in  dreapta la produs be */
+/* adauga variabila pentru gradient be */
