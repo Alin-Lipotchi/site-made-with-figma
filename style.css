@@ -27,6 +27,10 @@ ul {
     padding-top: 1rem;
 }
 
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
 /* Typography */
 
 h1 {
@@ -93,6 +97,7 @@ h4 {
     --tertiary-color_1: #CFD3E1;
     --border-color: #70A6F7;
     --disabled-color: #E2E3E9;
+    --gradient-color: linear-gradient(#353A8C, #2A5AA2);
 }
 
 .text-primary {
@@ -254,7 +259,7 @@ h4 {
 
 .cart {
     text-decoration: none;
-    background-color: var(--primary-color);
+    background: var(--gradient-color);
     padding: 12px;
     color: #fff;
     border-radius: 51px;
@@ -297,6 +302,7 @@ h4 {
 .product-card {
     border: 1px solid #E1E1EA;
     border-radius: 8px;
+    position: relative;
 }
 
 .product-card:hover {
@@ -307,6 +313,17 @@ h4 {
     font-size: 21px;
     line-height: 25px;
     padding: 0.5rem 1rem;
+}
+
+.product-card button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    border-radius: 50px;
+    opacity: 0;
+    transition: all .3s ease;
+    transform: translateX(-50%);
 }
 
 .card-link {
@@ -630,6 +647,18 @@ h4 {
     border-radius: 8px;
     width: 220px;
     background: #fff;
+    position: relative;
+}
+
+.sm-product-card button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0.7rem;
+    border-radius: 50px;
+    opacity: 0;
+    transition: all .3s ease;
+    transform: translateX(-50%);
 }
 
 .similar-products .sm-product-card:hover {
@@ -783,6 +812,22 @@ h4 {
         max-width: 500px;
         margin: 0;
     }
+
+    .similar-products {
+        background: var(--gradient-color);
+    }
+
+    /* Button Hover */
+
+    .product-card:hover button {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .sm-product-card:hover button {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 
@@ -802,7 +847,3 @@ h4 {
         right: 380px;
     }
 }
-
-/* fa state-ul de  hover la butoane be */
-/* pune pretu in  dreapta la produs be */
-/* adauga variabila pentru gradient be */
